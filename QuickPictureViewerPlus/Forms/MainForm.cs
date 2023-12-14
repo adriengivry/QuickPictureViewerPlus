@@ -1,4 +1,4 @@
-﻿using QuickLibrary;
+﻿using QuickLibraryPlus;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,7 +24,6 @@ namespace QuickPictureViewerPlus
 		private bool fullscreen = false;
 		private bool alwaysOnTop = false;
 		private bool imageChanged = false;
-		private bool darkMode = false;
 		private bool checkboardBackground = false;
 		private bool slideshow = false;
 		private int slideshowCounter = 0;
@@ -45,9 +44,10 @@ namespace QuickPictureViewerPlus
 		public bool printCenterImage = true;
 		public bool restartApp = false;
 
-		public MainForm(string openPath, bool darkMode)
+		private bool darkMode => ThemeMan.CurrentTheme == Theme.Dark;
+
+        public MainForm(string openPath)
 		{
-			this.darkMode = darkMode;
 			this.openPath = openPath;
 
 			InitializeComponent();

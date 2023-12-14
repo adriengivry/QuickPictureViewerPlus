@@ -1,4 +1,4 @@
-﻿using QuickLibrary;
+﻿using QuickLibraryPlus;
 
 namespace QuickPictureViewerPlus
 {

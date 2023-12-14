@@ -1,4 +1,4 @@
-﻿using QuickLibrary;
+﻿using QuickLibraryPlus;
 using System;
 using System.Collections.Generic;
 using System.Drawing;

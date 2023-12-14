@@ -30,9 +30,9 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WallpaperForm));
 			this.okButton = new System.Windows.Forms.Button();
-			this.closeBtn = new QuickLibrary.QlibTitlebarButton();
+			this.closeBtn = new QuickLibraryPlus.QlibTitlebarButton();
 			this.fitLabel = new System.Windows.Forms.Label();
-			this.fitComboBox = new QuickLibrary.QlibComboBox();
+			this.fitComboBox = new QuickLibraryPlus.QlibComboBox();
 			this.infoTooltip = new System.Windows.Forms.ToolTip(this.components);
 			this.SuspendLayout();
 			// 
@@ -131,9 +131,9 @@
 
 		#endregion
 		private System.Windows.Forms.Button okButton;
-		private QuickLibrary.QlibComboBox fitComboBox;
+		private QuickLibraryPlus.QlibComboBox fitComboBox;
 		private System.Windows.Forms.Label fitLabel;
 		private System.Windows.Forms.ToolTip infoTooltip;
-		private QuickLibrary.QlibTitlebarButton closeBtn;
+		private QuickLibraryPlus.QlibTitlebarButton closeBtn;
 	}
 }

@@ -1,5 +1,5 @@
 ﻿using Microsoft.Win32;
-using QuickLibrary;
+using QuickLibraryPlus;
 using System;
 using System.Diagnostics;
 using System.Drawing;
@@ -102,7 +102,7 @@ namespace QuickPictureViewerPlus
 			themeRestart.LinkColor = ThemeMan.AccentColor;
 			localizationRestart.LinkColor = ThemeMan.AccentColor;
 
-			if (ThemeMan.isWindows10()) makeDefaultBtn.Enabled = true;
+			if (ThemeMan.IsWindows10()) makeDefaultBtn.Enabled = true;
 		}
 
 		private void InitLanguage()

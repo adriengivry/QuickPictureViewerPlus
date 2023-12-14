@@ -31,11 +31,11 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectionForm));
 			this.cropBtn = new System.Windows.Forms.ToolStripMenuItem();
-			this.qlibToolsep5 = new QuickLibrary.QlibToolsep();
+			this.qlibToolsep5 = new QuickLibraryPlus.QlibToolsep();
 			this.selectionCopyBtn = new System.Windows.Forms.ToolStripMenuItem();
 			this.selectionSelectAllBtn = new System.Windows.Forms.ToolStripMenuItem();
 			this.editSelectionBtn = new System.Windows.Forms.ToolStripMenuItem();
-			this.selectionMenu = new QuickLibrary.QlibContextMenuStrip(this.components);
+			this.selectionMenu = new QuickLibraryPlus.QlibContextMenuStrip(this.components);
 			this.cutBtn = new System.Windows.Forms.ToolStripMenuItem();
 			this.selectionMenu.SuspendLayout();
 			this.SuspendLayout();
@@ -161,11 +161,11 @@
 
 		#endregion
 		private System.Windows.Forms.ToolStripMenuItem cropBtn;
-		private QuickLibrary.QlibToolsep qlibToolsep5;
+		private QuickLibraryPlus.QlibToolsep qlibToolsep5;
 		private System.Windows.Forms.ToolStripMenuItem selectionCopyBtn;
 		private System.Windows.Forms.ToolStripMenuItem selectionSelectAllBtn;
 		private System.Windows.Forms.ToolStripMenuItem editSelectionBtn;
-		private QuickLibrary.QlibContextMenuStrip selectionMenu;
+		private QuickLibraryPlus.QlibContextMenuStrip selectionMenu;
 		private System.Windows.Forms.ToolStripMenuItem cutBtn;
 	}
 }

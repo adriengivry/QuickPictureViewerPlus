@@ -30,16 +30,16 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditSelForm));
 			this.okButton = new System.Windows.Forms.Button();
-			this.closeBtn = new QuickLibrary.QlibTitlebarButton();
+			this.closeBtn = new QuickLibraryPlus.QlibTitlebarButton();
 			this.infoTooltip = new System.Windows.Forms.ToolTip(this.components);
-			this.heightNumeric = new QuickLibrary.QlibNumeric();
+			this.heightNumeric = new QuickLibraryPlus.QlibNumeric();
 			this.widthLabel = new System.Windows.Forms.Label();
 			this.heightLabel = new System.Windows.Forms.Label();
-			this.widthNumeric = new QuickLibrary.QlibNumeric();
-			this.yNumeric = new QuickLibrary.QlibNumeric();
+			this.widthNumeric = new QuickLibraryPlus.QlibNumeric();
+			this.yNumeric = new QuickLibraryPlus.QlibNumeric();
 			this.xLabel = new System.Windows.Forms.Label();
 			this.yLabel = new System.Windows.Forms.Label();
-			this.xNumeric = new QuickLibrary.QlibNumeric();
+			this.xNumeric = new QuickLibraryPlus.QlibNumeric();
 			this.SuspendLayout();
 			// 
 			// okButton
@@ -288,14 +288,14 @@
 		#endregion
 		private System.Windows.Forms.Button okButton;
 		private System.Windows.Forms.ToolTip infoTooltip;
-		private QuickLibrary.QlibTitlebarButton closeBtn;
-		private QuickLibrary.QlibNumeric heightNumeric;
+		private QuickLibraryPlus.QlibTitlebarButton closeBtn;
+		private QuickLibraryPlus.QlibNumeric heightNumeric;
 		private System.Windows.Forms.Label widthLabel;
 		private System.Windows.Forms.Label heightLabel;
-		private QuickLibrary.QlibNumeric widthNumeric;
-		private QuickLibrary.QlibNumeric yNumeric;
+		private QuickLibraryPlus.QlibNumeric widthNumeric;
+		private QuickLibraryPlus.QlibNumeric yNumeric;
 		private System.Windows.Forms.Label xLabel;
 		private System.Windows.Forms.Label yLabel;
-		private QuickLibrary.QlibNumeric xNumeric;
+		private QuickLibraryPlus.QlibNumeric xNumeric;
 	}
 }

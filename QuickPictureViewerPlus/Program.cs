@@ -1,4 +1,4 @@
-﻿using QuickLibrary;
+﻿using QuickLibraryPlus;
 using System;
 using System.Windows.Forms;
 
@@ -6,14 +6,22 @@ namespace QuickPictureViewerPlus
 {
 	internal static class Program
 	{
+		static string GetOpenPath(string[] args)
+		{
+			if (args.Length > 0 && args[0] != "-1")
+			{
+				return args[0];
+			}
+
+			return string.Empty;
+		}
+
 		[STAThread]
 		static void Main(string[] args)
 		{
-            ApplicationConfiguration.Initialize();
+			ApplicationConfiguration.Initialize();
 
-            string param;
-			if (args.Length > 0) param = args[0] == "-1" ? string.Empty : args[0];
-			else param = string.Empty;
+			string openPath = GetOpenPath(args);
 
 			if (Properties.Settings.Default.CallUpgrade)
 			{
@@ -22,15 +30,10 @@ namespace QuickPictureViewerPlus
 				Properties.Settings.Default.Save();
 			}
 
-			bool darkMode;
-			int theme = Properties.Settings.Default.Theme;
-			if (theme == 0) darkMode = ThemeMan.isDarkTheme();
-			else if (theme == 1) darkMode = false;
-			else darkMode = true;
+			Theme theme = ThemeMan.GetSupportedTheme(Properties.Settings.Default.Theme);
+			ThemeMan.ApplyTheme(theme);
 
-			if (darkMode) ThemeMan.AllowAppDarkMode(true);
-
-			Application.Run(new MainForm(param, darkMode));
+			Application.Run(new MainForm(openPath));
 		}
 	}
 }

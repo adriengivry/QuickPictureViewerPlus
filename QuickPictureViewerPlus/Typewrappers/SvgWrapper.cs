@@ -1,4 +1,4 @@
-﻿using QuickLibrary;
+﻿using QuickLibraryPlus;
 using Svg;
 using System;
 using System.Drawing;
