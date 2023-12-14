@@ -1,0 +1,4 @@
+
+[submodule "QuickLibraryPlus"]
+	path = QuickLibraryPlus
+	url = https://github.com/adriengivry/QuickLibraryPlus
