@@ -4,3 +4,6 @@
 [submodule "dependencies/qpv-plugins"]
 	path = dependencies/qpv-plugins
 	url = https://github.com/ModuleArt/qpv-plugins
+[submodule ".\\dependencies\\qpv-plugins"]
+	path = .\\dependencies\\qpv-plugins
+	url = https://github.com/ModuleArt/qpv-plugins

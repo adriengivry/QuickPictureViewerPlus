@@ -51,7 +51,7 @@ namespace quick_picture_viewer
 			if (listView1.Items != null && listView1.Items.Count > 0) listView1.Items.Clear();
 			if (imageList1.Images != null && imageList1.Images.Count > 0) imageList1.Images.Clear();
 
-			PluginMan.pluginsFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "plugins");
+			PluginMan.pluginsFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory);
 			PluginMan.inputType = "bitmap";
 
 			PluginInfo[] plugins = PluginMan.GetPluginsCache(Properties.Settings.Default.PluginsCache);

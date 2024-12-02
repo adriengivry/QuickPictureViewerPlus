@@ -1971,7 +1971,7 @@ namespace quick_picture_viewer
 			effectsBtn.DropDownItems.Clear();
 			toolsBtn.DropDownItems.Clear();
 
-			PluginMan.pluginsFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "plugins");
+			PluginMan.pluginsFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory);
 			PluginMan.inputType = "bitmap";
 
 			PluginInfo[] plugins = PluginMan.GetPluginsCache(Properties.Settings.Default.PluginsCache);
